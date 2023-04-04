@@ -1,0 +1,2 @@
+# implement three or more functions that collectively test your implementation of value thoroughly, each of whose names should begin with test_ so that you can execute your tests with
+#pytest test_bank.py
