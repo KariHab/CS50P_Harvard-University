@@ -1,5 +1,5 @@
 # ask user to answer the question
-answer = str(input("What is the Answer to the Great Question of Life, the Universe , and Everything?"))
+answer = input("What is the Answer to the Great Question of Life, the Universe , and Everything?")
 
 #output yes if answer is 42 otherwise no
 if answer.strip() == "42":

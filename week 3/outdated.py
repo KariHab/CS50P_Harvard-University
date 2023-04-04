@@ -23,7 +23,6 @@ for _ in month_year:
             if d <= 31 and m <= 12:
                 print(f"{y}-{m:02}-{d:02}")
                 break
-
         else:
             if date.__contains__(","):
                 date = date.title().replace(",", ""). split(" ")
@@ -33,6 +32,5 @@ for _ in month_year:
                 if d <= 31 and m <= 12:
                     print(f"{y}-{m:02}-{d:02}")
                     break
-
     except(KeyError, ValueError):
         pass

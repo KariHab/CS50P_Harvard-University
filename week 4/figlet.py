@@ -11,8 +11,7 @@ if len(sys.argv) == 1:
     random_font = " ".join(random_font)
     result = pyfiglet.figlet_format(user_text, font = random_font)
     print("Output: ", result)
-
-
+    
 if len(sys.argv) == 2 or len(sys.argv) == 3:
     fonts = pyfiglet.FigletFont.getFonts()
     if sys.argv[1] == "-f" or sys.argv[1] == "--font" and sys.argv[2] in fonts:

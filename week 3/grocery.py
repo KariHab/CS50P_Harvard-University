@@ -8,7 +8,6 @@ while True:
             grocery_list[item] = grocery_list[item] + 1
         else:
             grocery_list[item] = 1
-
     except EOFError:
         if grocery_list == {}:
             break

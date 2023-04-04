@@ -10,20 +10,14 @@ menu = {
     "Tortilla Salad": 8.00
 }
 
-
 total = 0
-
 try:
     for item in menu:
         item = input("Item: ").title()
-
         if item in menu:
             total = total + menu[item]
             print(f'Total: ${total}0')
-          
         if item.lower() == "control-d":
             break
-
-
 except (KeyError, ValueError, EOFError, RuntimeError):
     pass

@@ -1,9 +1,4 @@
-
-#ask for an item
-item =input("Item: ").lower()
-
-
-#ouput calories du fruit
+item = input("Item: ").lower()
 fruits = {
     "apple": "130",
     "avocado": "50",
@@ -29,12 +24,7 @@ fruits = {
 
 }
 
-''''for item in fruits:
-    item =input("Item: ").lower()
-    print("Calories: ", fruits[item])
-    break'''''
 if item in fruits:
-    #item = input("Item: ").lower()
-    print("Calories: ", fruits[item])
-#ignore any item that is not a fruit
+    print("Calories:", fruits[item])
+
 

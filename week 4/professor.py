@@ -2,7 +2,6 @@ import random
 
 def main():
     level = get_level()
-
     error = 0
     score = 0
     for i in range (0, 10):
@@ -19,25 +18,19 @@ def main():
                 elif answer != problem:
                     error += 1
                     print("EEE")
-
                 if error == 3:
                     print(f"{x} + {y} = {problem}")
                     break
-
             except ValueError:
                 errors += 1
                 print("EEE")
-
-
     print(f"Score: {score}")
-
 
 def get_level():
     while True:
         level = input("Level: ")
         if level =="1" or level == "2" or level == "3":
             return int(level)
-
 
 def generate_integer(level):
     if level == 1:
@@ -48,8 +41,6 @@ def generate_integer(level):
         return random.randint(100,999)
     if level <1 or level >3:
         raise ValueError
-
-
 
 if __name__ == "__main__":
     main()

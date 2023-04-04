@@ -1,9 +1,6 @@
-#implement four or more functions
 import pytest
 from plates import is_valid
 
-
-#test your implementation of is_valid thoroughly
 def test_alphabetical():
     assert is_valid("AB") == True
     assert is_valid("A2") == False
