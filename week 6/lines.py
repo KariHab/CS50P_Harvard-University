@@ -2,18 +2,13 @@ import sys
 import os.path
 from os import path
 
-
-
-#ask for a command line arg
 name = sys.argv[1]
 a,b = name.split(".")
 
 if b != "py" or len(sys.argv) < 2 or len(sys.argv) > 2:
     sys.exit("does not meet the requirements")
-
 elif not path.exists(sys.argv[1]):
     sys.exit()
-
 else:
     with open(sys.argv[1], 'r') as file:
         lines = file.read().splitlines()

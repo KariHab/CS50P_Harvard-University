@@ -7,10 +7,9 @@ from PIL import Image, ImageOps
 file_read = os.path.splitext(sys.argv[1])
 file_write = os.path.splitext(sys.argv[2])
 
-#if the user does not specify exactly two command-line arguments,
+#if the user does not specify exactly two command-line arguments
 if len(sys.argv) < 3:
     sys.exit("too few command line arguments")
-
 elif len(sys.argv) > 3:
     sys.exit("too many command line arguments")
 

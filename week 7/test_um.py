@@ -1,13 +1,10 @@
 from um import count
 import pytest
 
-#three or more functions that collectively test your implementation of count
-
 def test_word():
     assert count("am") == 0
     assert count("um") == 1
     assert count("Um") == 1
-
 
 def test_alpha():
     assert count("um!") == 1

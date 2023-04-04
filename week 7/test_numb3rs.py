@@ -1,7 +1,4 @@
-#two or more functions that collectively test your implementation of validate thoroughly
-#each of whose names should begin with test_ so that you can execute your tests with: pytest test_numb3rs.py
 from numb3rs import validate
-
 
 
 def test_numbers():
